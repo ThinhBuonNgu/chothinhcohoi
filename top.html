@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Top</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+                                        
+
+</head>
+<body>
+<section class="subheader">
+	<nav>
+		<a href="mainpage.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hidemenu()"></i>
+			<ul>
+				<li><a href="top.html">Top</a></li>
+				<li><a href="jungle.html">Jungle</a></li>
+				<li><a href="mid.html">Mid</a></li>
+				<li><a href="sp.html">Support</a></li>
+				<li><a href="bot.html">Bot</a></li>
+				
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+<div class="brief">
+	<img src="images/qtop.png">
+	<div class="yap">
+	<h5>Top Lane</h5>
+	<p>The top lane in League of Legends is often seen as an isolated battleground, a place where champions engage in long, drawn-out duels, testing their mechanics, strategy, and resilience. Unlike the mid lane, which is centrally located and frequently influenced by roaming junglers and support players, the top lane tends to be a more self-sufficient and strategic position, where players must rely on their ability to outmaneuver their direct opponent while keeping an eye on the broader game state. This lane is commonly home to tank, bruiser, and split-pushing champions, but with the evolution of the game’s meta, we’ve seen an increasing variety of playstyles and champion picks thrive in the role.<br>One of the defining characteristics of the top lane is its long lane distance and lack of direct assistance compared to other roles. Without early-game protection from a nearby turret like bot lane’s duo setup, top laners must be mindful of wave management, ensuring they don’t push too aggressively without proper vision, lest they fall prey to enemy junglers looking for an easy kill. Because of this, warding and tracking the enemy jungle’s movements are crucial skills for any successful top laner. A well-placed ward in the river or near the enemy’s jungle entrance can prevent ganks and provide invaluable information to the team.</p>
+	</div>
+</div>
+<div class="reco">
+	<h5>Recommend Champs</h5>
+	<div class="img-container">
+	<a href="topzac.html">
+		<img src="images/zac.png">
+	</a>
+	<a href="topjhin.html">
+		<img src="images/jhin.png">
+	</a>
+	<a href="topfiddlesticks.html">
+		<img src="images/fiddlesticks.png">
+	</a>
+	</div>
+</div>
+	
+</section>
+
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+	
+	function showmenu(){
+		navLinks.style.right = "0";
+		}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+		}
+
+
+</script>
+
+
+
+
+
+
+
+</html>

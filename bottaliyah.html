@@ -1,0 +1,139 @@
+<html>
+<head>
+	<title>Taliyah Bot</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+                                        
+
+</head>
+<body>
+<section class="subheader">
+	<nav>
+		<a href="mainpage.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hidemenu()"></i>
+			<ul>
+				<li><a href="top.html">Top</a></li>
+				<li><a href="jungle.html">Jungle</a></li>
+				<li><a href="mid.html">Mid</a></li>
+				<li><a href="sp.html">Support</a></li>
+				<li><a href="bot.html">Bot</a></li>
+				
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+ <section class="champ-overview">
+        <img src="images/taliyah.png" alt="Taliyah">
+        <p>Taliyah has good scaling and self-peel.</p>
+    </section>
+
+    <section class="build">
+        <h2>Recommended Build</h2>
+        <div class="items">
+            <div class="item">
+                <img src="images/luden.png" alt="Luden's Companion">
+                <p>Luden's Companion </p>
+            </div>
+            <div class="item">
+                <img src="images/sorc.png" alt="Sorcerer's Shoes">
+                <p>Sorcerer's Shoes</p>
+            </div>
+            <div class="item">
+                <img src="images/rabadon.png" alt="Rabadon's Deathcap">
+                <p>Rabadon's Deathcap</p>
+            </div>
+            <div class="item">
+                <img src="images/staff.png" alt="Void Staff">
+                <p>Void Staff</p>
+            </div>
+            <div class="item">
+                <img src="images/zhon.png" alt="Zhonya's Hourglass">
+                <p>Zhonya's Hourglass</p>
+            </div>
+			<div class="item">
+                <img src="images/shadowflame.png" alt="Shadowflame">
+                <p>Shadowflame</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skill Order</h2>
+        <div class="skill-order">
+            <p><strong>Max Order:</strong> Q > E > W</p>
+            <ul>
+                <li><b>Q - Threaded Volley</b>: Max first for damage and CD reduction</li>
+                <li><b>W - Seismic Shove</b>: Max third</li>
+                <li><b>E - Unraveled Earth</b>: Max second for damage and CC</li>
+                <li><b>R - Weaver's Wall</b>: Upgrade whenever possible</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gameplay">
+        <h2>Gameplay Guide</h2>
+        <div class="laning-phase">
+            <h3>Laning Phase</h3>
+            <p>Farm for items, skirmish with jungler</p>
+        </div>
+        <div class="late-game">
+            <h3>Late Game</h3>
+            <p>Either DPS front-to-back or use R to make plays</p>
+        </div>
+    </section>
+
+    <section class="matchups">
+        <h2>Matchups</h2>
+        <div class="matchup-category easy">
+            <h3>✅ Easy Matchups</h3>
+            <p>These champions allow Taliyah to free farm </p>
+            <ul>
+                <li><img src="images/veigar.png" alt="Veigar"> Veigar</li>
+                <li><img src="images/azir.png" alt="Azir"> Azir</li>
+            </ul>
+        </div>
+
+        <div class="matchup-category even">
+            <h3>⚖️ Even Matchups</h3>
+            <p>Require a mix of game knowledge and skill.</p>
+            <ul>
+                <li><img src="images/yasuo.png" alt="Yasuo"> Yasuo</li>
+                <li><img src="images/jhin.png" alt="Jhin"> Jhin</li>
+                <li><img src="images/anivia.png" alt="Anivia"> Anivia</li>
+            </ul>
+        </div>
+
+        <div class="matchup-category hard">
+            <h3>❌ Hard Matchups</h3>
+            <p>These champions can spell disaster for Taliyah</p>
+            <ul>
+                <li><img src="images/syndra.png" alt="Syndra"> Syndra</li>
+                <li><img src="images/akali.png" alt="Akali"> Akali</li>
+                <li><img src="images/zac.png" alt="Zac"> Zac</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+</section>
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+	
+	function showmenu(){
+		navLinks.style.right = "0";
+		}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+		}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Small Guide, Small Champions Pool</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+                                        
+
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="mainpage.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hidemenu()"></i>
+			<ul>
+				<li><a href="top.html">Top</a></li>
+				<li><a href="jungle.html">Jungle</a></li>
+				<li><a href="mid.html">Mid</a></li>
+				<li><a href="sp.html">Support</a></li>
+				<li><a href="bot.html">Bot</a></li>
+				
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+<div class="text-box">
+	<h1>One-Tricking All Lanes</h1>
+	<p>League's meta isn't as restricted as it once was, hence, even with a relatively small champions pool,<br> anyone can found success in any lanes and donimated any elo</p>
+</div>
+</section>
+
+<section class="champions">
+	<h1>Featured Champions</h1>
+	<p>Click on the champions' picture to go to their wiki</p>
+	
+	<div class="row">
+		<div class="Champions-col">
+		<a href="https://leagueoflegends.fandom.com/wiki/Zac" target="_blank">
+			<img src="images/zac.png">
+			<div class="layer">
+				<div class="text-container">
+					<div class="column">ZAC</div>
+					<div class="column">-Tanky engage with lots of cc</div>
+					<div class="column">-Good mobility and map pressure</div>
+					<div class="column">-Easy to pick up</div>
+				</div>
+			</div>
+		</a>
+		</div>
+		<div class="Champions-col">
+		<a href="https://leagueoflegends.fandom.com/wiki/Fiddlesticks" target="_blank">
+			<img src="images/fiddlesticks.png">
+			<div class="layer">
+				<div class="text-container">
+					<div class="column">FIDDLESTICKS</div>
+					<div class="column">-High burst and lots of cc</div>
+					<div class="column">-Extremely strong skirmisher and team-fighter</div>
+					<div class="column">-Require good macro</div>
+				</div>
+			</div>
+		</a>
+		</div>
+		<div class="Champions-col">
+		<a href="https://leagueoflegends.fandom.com/wiki/Taliyah" target="_blank">
+			<img src="images/taliyah.png">
+			<div class="layer">
+				<div class="text-container">
+					<div class="column">TALIYAH</div>
+					<div class="column">-Good scaling and map pressure</div>
+					<div class="column">-Good front-to-back dps</div>
+					<div class="column">-High and rewarding learning curve</div>
+				</div>
+			</div>
+		</a>
+		</div>
+		<div class="Champions-col">
+		<a href="https://leagueoflegends.fandom.com/wiki/Jhin" target="_blank">
+			<img src="images/jhin.png">
+			<div class="layer">
+				<div class="text-container">
+					<div class="column">JHIN</div>
+					<div class="column">-Lane-bully with decent scaling</div>
+					<div class="column">-Long range and utility</div>
+					<div class="column">-Beginner-friendly with high skill-ceiling</div>
+				</div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+<section class="chooseurlane">
+  <h1>Roles</h1>
+  <p>Pick your preferred role</p>
+
+  <div class="pentagon-container">
+    <div class="chooseurlane-col" data-role="TOP LANE">
+	<a href="top.html">
+      <img src="images/top.png" alt="Top Lane">
+	</a>  
+    </div>
+    <div class="chooseurlane-col" data-role="JUNGLE">
+	<a href="jungle.html">
+      <img src="images/jungle.png" alt="Jungle">
+	</a>
+    </div>
+    <div class="chooseurlane-col" data-role="MID LANE">
+	<a href="mid.html">
+      <img src="images/mid.png" alt="Mid Lane">
+	</a>
+    </div>
+    <div class="chooseurlane-col" data-role="SUPPORT">
+	<a href="sp.html">
+      <img src="images/sp.png" alt="Support">
+	</a>
+    </div>
+    <div class="chooseurlane-col" data-role="ADC/APC">
+	<a href="bot.html">
+      <img src="images/bot.png" alt="ADC">
+	</a>
+    </div>
+    <div class="center-content" id="center-content"></div>
+  </div>
+</section>
+	
+</section>
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+	
+	function showmenu(){
+		navLinks.style.right = "0";
+		}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+		}
+
+
+</script>
+<script>
+
+const cols = document.querySelectorAll('.chooseurlane-col');
+const centerContent = document.getElementById('center-content');
+
+cols.forEach(col => {
+  col.addEventListener('mouseenter', () => {
+    centerContent.textContent = col.getAttribute('data-role');
+  });
+  col.addEventListener('mouseleave', () => {
+    centerContent.textContent = col.getAttribute('data-role');
+  });
+});
+</script>
+
+
+</body>
+
+
+
+
+</html>

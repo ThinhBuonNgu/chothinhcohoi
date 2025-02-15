@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Bot</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+                                        
+
+</head>
+<body>
+<section class="subheader">
+	<nav>
+		<a href="mainpage.html"><img src="images/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hidemenu()"></i>
+			<ul>
+				<li><a href="top.html">Top</a></li>
+				<li><a href="jungle.html">Jungle</a></li>
+				<li><a href="mid.html">Mid</a></li>
+				<li><a href="sp.html">Support</a></li>
+				<li><a href="bot.html">Bot</a></li>
+				
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showmenu()"></i>
+	</nav>
+<div class="brief">
+	<img src="images/qbot.png">
+	<div class="yap">
+	<h5>Bot Lane</h5>
+	<p>The ADC (Attack Damage Carry) and APC (Ability Power Carry) roles in League of Legends are among the most mechanically demanding and high-risk, high-reward positions in the game. Traditionally, ADCs are played in the bot lane, partnered with a support, and rely on their basic attacks and attack speed scaling to dish out sustained damage in fights. Meanwhile, APCs (a less common but still viable variant) are mages or ability-based champions that fulfill a similar damage-dealing role but rely more on their spells rather than auto-attacks. Both roles require strong positioning, precise mechanics, and excellent game sense to reach their full potential.<br>The ADC and APC roles are some of the most mechanically intense in League of Legends, requiring a strong understanding of positioning, farming, and team fighting. While ADCs offer sustained physical damage and scale hard into the late game, APCs provide burst magic damage and poke potential, allowing for different strategic approaches. Both roles are glass cannons, meaning they are incredibly powerful but extremely vulnerable if caught out. Mastering these roles takes time, experience, and deep game knowledge, but for those who do, the satisfaction of single-handedly carrying a team fight is unmatched.</p>
+	</div>
+</div>
+<div class="reco">
+	<h5>Recommend Champs</h5>
+	<div class="img-container">
+	<a href="botjhin.html">
+		<img src="images/jhin.png">
+	</a>
+	<a href="bottaliyah.html">
+		<img src="images/taliyah.png">
+	</a>
+	</div>
+</div>
+	
+</section>
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+	
+	function showmenu(){
+		navLinks.style.right = "0";
+		}
+	function hidemenu(){
+		navLinks.style.right = "-200px";
+		}
+
+
+</script>
+</body>
+</html>
