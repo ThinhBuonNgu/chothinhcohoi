@@ -250,8 +250,8 @@ p{
 
 
 .chooseurlane-col:nth-child(1) { top: 0; left: 37.8%;}
-.chooseurlane-col:nth-child(2) { top: 33%; left: 1%; }
-.chooseurlane-col:nth-child(3) { top: 33%; right: 1%; }
+.chooseurlane-col:nth-child(2) { top: 33%; left: 0.5%; }
+.chooseurlane-col:nth-child(3) { top: 33%; right: 0.5%; }
 .chooseurlane-col:nth-child(4) { bottom: 0; left: 14%; }
 .chooseurlane-col:nth-child(5) { bottom: 0; right: 14%; }
 
